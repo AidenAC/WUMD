@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Monday</h2>
+    <div class="container-fluid">
+        {% for show in showList %}
+            {% if show.day == 'Monday' %}
+            <div class="card" style="width: 16rem;">
+                <div class="card-body">
+                    <h5 class="card-title">{{ show.name }}</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Host: {{ show.host }}</h6>
+                    <p class="card-text">{{ show.time }}</p>
+                </div>
+            </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+
+    <h2>Tuesday</h2>
+    <div class="container-fluid">
+        {% for show in showList %}
+            {% if show.day == 'Tuesday' %}
+            <div class="card" style="width: 16rem;">
+                <div class="card-body">
+                    <h5 class="card-title">{{ show.name }}</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Host: {{ show.host }}</h6>
+                    <p class="card-text">{{ show.time }}</p>
+                </div>
+            </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+
+    <h2>Wednesday</h2>
+    <div class="container-fluid">
+        {% for show in showList %}
+            {% if show.day == 'Wednesday' %}
+            <div class="card" style="width: 16rem;">
+                <div class="card-body">
+                    <h5 class="card-title">{{ show.name }}</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Host: {{ show.host }}</h6>
+                    <p class="card-text">{{ show.time }}</p>
+                </div>
+            </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+
+    <h2>Thursday</h2>
+    <div class="container-fluid">
+        {% for show in showList %}
+            {% if show.day == 'Thursday' %}
+            <div class="card" style="width: 16rem;">
+                <div class="card-body">
+                    <h5 class="card-title">{{ show.name }}</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Host: {{ show.host }}</h6>
+                    <p class="card-text">{{ show.time }}</p>
+                </div>
+            </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+
+    <h2>Friday</h2>
+    <div class="container-fluid">
+        {% for show in showList %}
+            {% if show.day == 'Friday' %}
+            <div class="card" style="width: 16rem;">
+                <div class="card-body">
+                    <h5 class="card-title">{{ show.name }}</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Host: {{ show.host }}</h6>
+                    <p class="card-text">{{ show.time }}</p>
+                </div>
+            </div>
+            {% endif %}
+        {% endfor %}
+    </div>
+{% endblock %}
